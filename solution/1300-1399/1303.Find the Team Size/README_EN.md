@@ -121,6 +121,10 @@ FROM
 GROUP BY 1;
 ```
 
+### window function
+ select employee_id, count(*) over(partition by team_id) as team_size 
+ from employee 
+
 <!-- tabs:end -->
 
 <!-- solution:end -->
